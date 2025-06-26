@@ -1,6 +1,6 @@
-This repo contains the source code for the projects I demonstrate in my CIDL webseries.
+This repo contains the source code for the projects I demonstrate in my [CIDL webseries](https://www.youtube.com/playlist?list=PLpKnsnE7SJVopIOfWptNwBnbys1coetbK).
 
-CIDL -- Comprehensive and Intuitive Introduction to Deep Learning
+**CIDL** -- Comprehensive and Intuitive Introduction to Deep Learning
 
 ## WHY
 
