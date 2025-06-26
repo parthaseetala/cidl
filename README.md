@@ -14,4 +14,4 @@ This started as an experiment: Can we teach both the **breadth** and **depth** o
 
 ## PLAYLIST
 
-[Playlist is available here: https://www.youtube.com/playlist?list=PLpKnsnE7SJVopIOfWptNwBnbys1coetbK](https://www.youtube.com/playlist?list=PLpKnsnE7SJVopIOfWptNwBnbys1coetbK)
+**Playlist is available here:** [https://www.youtube.com/playlist?list=PLpKnsnE7SJVopIOfWptNwBnbys1coetbK](https://www.youtube.com/playlist?list=PLpKnsnE7SJVopIOfWptNwBnbys1coetbK)
