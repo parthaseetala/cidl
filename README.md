@@ -27,7 +27,7 @@ This started as an experiment: Can we teach both the **breadth** and **depth** o
   - Episode 5: [Seq2Seq Networks -- building conversational language interfaces](https://www.youtube.com/watch?v=eTknarEWVm8)
 
 - **SEASON 3 -- Transformers and Large Language Models**
-  - Episode 1: Introduction to Transformer Architecture and LLMs -- a holistic overview
+  - Episode 1: [Transformers/LLMs Explained Like Never Before: Intuition, Math & Code in an Illustrated Trilogy](https://youtu.be/6jyL6NB3_LI)
   - Episode 2: Encoder-only Transformer explained simply, intuitively and comprehensively
   - Episode 3: Decoder-only Transformer explained simply, intuitively and comprehensively
   - Episode 4: Encoder-Decoder Transformer explained simply, intuitively and comprehensively
