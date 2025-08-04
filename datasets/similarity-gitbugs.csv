@@ -1,0 +1,493 @@
+text_a,text_b,score
+Expose streaming as a vtable,Save state about completed streams and display in nodetool netstats,1.0
+Merge guardrails and track warnings configurations,Migrate track_warnings to more standard naming conventions and use latest configuration types rather than long,1.0
+Write docs for CEP-26 Unified Compaction Strategy (UCS),Unified Compaction Strategy is missing documentation,1.0
+org.apache.cassandra.repair.RepairJobTest testOptimizedCreateStandardSyncTasks,Improve performance when calculating StreamTasks with optimised streaming,1.0
+IllegalStateException with prepared queries selecting static columns in mixed 3.0.x/4.x clusters,IllegalStateException when query on table having static columns during the Cassandra cluster upgrade from 3.11.4 to 4.0.11,1.0
+Possible memory leak in BTree.FastBuilder ,Pooled BTree.FastBuilder keeps references to data after reset,1.0
+Upgrade to lz4-java 1.8,Upgrade lz4-java to 1.8.0 to add RH6 support back,1.0
+Topology events are not sent to clients if the nodes use the same network interface,pushed_notifications_test.TestPushedNotifications.test_restart_node_localhost failure,1.0
+Test Failure: secondary_indexes_test.py::TestSecondaryIndexes::test_failing_manual_rebuild_index,LEAK DETECTED: org.apache.cassandra.io.util.FileHandle$Cleanup in TestSecondaryIndexes.test_failing_manual_rebuild_index,1.0
+netty-handler vulnerability: CVE-2023-4586,Investigate and fix CVE-2023-4586,1.0
+AbstractCommitLogService#lastSyncedAt initialized with currentTimeMillis() but later compared and updated with System.nanoTime() ,AbstractCommitLogService#lastSyncedAt initialized with currentTimeMillis() but later compared and updated with System.nanoTime() ,1.0
+Document how to run Cassandra on Windows,"Update ""Getting Started"" document for Windows users",1.0
+"Memtable being flushed without hostId in version ""me"" and newer during CommitLogReplay",Warning at startup in 3.11.11 or above version of Cassandra,1.0
+"StorageService exposes ensureTraceKeyspace that is used by jvm-dtest, but it should be removed and use MigrationManager.evolveSystemKeyspace instead","When a table attempts to clean up metrics, it was cleaning up all global table metrics",1.0
+Test failure: dtest.secondary_indexes_test.TestPreJoinCallback.test_resume,Test failure: secondary_indexes_test.TestPreJoinCallback.test_resume,1.0
+Optimize logging with lazy log parameter evaluation,NoSpamLogger arguments building objects on hot paths,1.0
+rpc server gets wrongly initialized with rpc_enabled:false,NullPointerException when calling nodetool enablethrift,1.0
+SSL connection to storage port when internode encryption is disabled still try to load keystore,TLS connections to the storage port on a node without server encryption configured causes java.io.IOException accessing missing keystore,1.0
+Test failure: j11_jvm_dtests org.apache.cassandra.distributed.test.ring.DecommissionTest#testMixedVersionBlockDecom-_jdk11,Test failure: org.apache.cassandra.distributed.test.ring.DecommissionTest.test*Version*,1.0
+jackson-databind vulnerability CVE-2022-42003 CVE-2022-42004,jackson-databind2.13.2.2 still exists in apache-cassandra-5.0.2,1.0
+"Python DTest does not release CQL connections, which can cause containers to hang for 2 hours trying to connect to a server thats already gone","Python DTest does not release CQL connections, which can cause containers to hang for 2 hours trying to connect to a server thats already gone",1.0
+Test Failure: dtest-upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV3Upgrade_AllVersions_EndsAt_3_11_X.test_parallel_upgrade,Fix flaky dtest - upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV3Upgrade_AllVersions_EndsAt_3_11_X.test_rolling_upgrade,1.0
+cassandra local_quorum query is inconsistent, cassandra local_quorum query is inconsistent,1.0
+Add a Virtual table to expose Streaming metrics,Expose streaming as a vtable,1.0
+"snappy-java vulnerability: CVE-2023-34455, CVE-2023-34454, CVE-2023-34453",snappy-java vulnerability: CVE-2023-34453,1.0
+Test Failure: InsertUpdateIfConditionTest.testMultiExistConditionOnSameRowClustering,Flaky test: org.apache.cassandra.cql3.validation.operations.InsertUpdateIfConditionTest.testConditionalUpdate[1: clusterMinVersion=3.11]-compression.jdk1.8 on trunk,1.0
+Make resumable bootstrap feature optional,A few large DTests failing on trunk after  CASSANDRA-17679,1.0
+Flaky upgrade_tests.cql_tests.TestCQLNodes2RF1_Upgrade_current_4_0_x_To_indev_trunk.test_noncomposite_static_cf,flaky dtest-upgrade.upgrade_tests.cql_tests TestCQLNodes2RF1_Upgrade_indev_4_0_x_To_indev_trunk test_static_cf,1.0
+Upgrade caffeine to 3.1.8 and fix CIDR permissions cache invalidation,CIDR permission cache probably does not work,1.0
+Test Failure: org.apache.cassandra.simulator.test.ShortPaxosSimulationTest.simulationTest-_jdk11,Test Failure: org.apache.cassandra.simulator.test.ShortPaxosSimulationTest.simulationTest,1.0
+LeveledCompactionStrategy disk space check improvements,Allow reducing scope for L0 to L1 compactions when space is limited,1.0
+Scrub does not detect invalid partition keys,python dest Failure: scrub_test.py::TestScrubIndexes::test_scrub_collections_table,1.0
+jvm-dtests crash on java 17,NativeTransportEncryptionOptionsTest fails often in CI,1.0
+Test failure: Fix assertion error AssertionError: Unknown keyspace system_auth\n\tat org.apache.cassandra.db.Keyspace.<init>(Keyspace.java:324)\n\tat org.apache.cassandra.db.Keyspace.lambda$open$0(Keyspace.java:162),Test failure: org.apache.cassandra.tools.nodetool.ClearSnapshotTest.testClearSnapshot_RemoveByName-.jdk11.arch=x86_64.python2.7,1.0
+CEP-15: (C*) Accord message processing should avoid being passed on to a Stage and run directly in the messageing handler,CEP-15 (Accord) accord.messages.Defer rejects Recurrent retry of Commit,1.0
+LongSharedExecutorPoolTest.testPromptnessOfExecution burn test is flaky,Fix flaky LongSharedExecutorPoolTest.testPromptnessOfExecution,1.0
+Add missing tests suites to CircleCI,Cython not tested on 4.0,1.0
+snakeyaml-1.26.jar: CVE-2022-41854,Bump snakeyaml from 1.26 to 2.0,1.0
+Fix flaky test testMetricsWithRepairAndStreamingFromTwoNodes - org.apache.cassandra.distributed.test.metrics.StreamingMetricsTest,Fix flaky StreamingMetricsTest.testMetricsWithRebuildAndStreamingToTwoNodes,1.0
+Improve the way we pick sstables for STCS-in-L0 and in TWCS 'current' window,L0 compactions never recover when thousands unleveled,1.0
+Add an optimized default configuration to tests and make it available for new users,We should offer an option for optimized default configuration,1.0
+Upgrade snappy java library,snappy-java-1.1.10.1 vulnerability: CVE-2023-43642,1.0
+Nodetool ring unit testing,Nodetool unit testing,1.0
+Unable to specify -e/--execute flag in cqlsh,cqlsh -e parsing bug,1.0
+DOC - Fix Dynamo paper links to have working urls,Write docs for CEP-26 Unified Compaction Strategy (UCS),1.0
+Test Failure: dtest-novnode.transient_replication_test.TestTransientReplicationRepairLegacyStreaming.test_optimized_primary_range_repair_with_lcs ,Jolokia agent fails to connect though port is available,1.0
+MessagingServiceTest listenOptionalSecureConnection and listenRequiredSecureConnection fail sporadically,Fix test org.apache.cassandra.net.MessagingServiceTest,1.0
+Fix test testIsrepairedArg - org.apache.cassandra.tools.SSTableRepairedAtSetterTest,Remove test parallelism from ant build.xml in all branches,1.0
+Fix flaky dtest - org.apache.cassandra.distributed.test.SchemaTest.readRepair,Fix flaky dtest - org.apache.cassandra.distributed.upgrade.BatchUpgradeTest.batchTest ,1.0
+Invalid serialized size for responses,BufferOverflow exception while writing response to buffer,1.0
+system_schema keyspace complain of schema mismatch during upgrade,"upgraded nodes encountered ""Unknown column kind"" RuntimeException during upgrade C* from 3.0 to 3.2",1.0
+Backport CASSANDRA-17205 (remove strong self-ref in tidier) to all supported lines,Backport CASSANDRA-17205 to 4.0 branch (strong ref leak),1.0
+Bump snakeyaml from 1.26 to 2.0,Bump snakeyaml from 1.26 to 2.0,1.0
+Joining nodes simultaneously with auto_bootstrap:false can cause token collision,deterministic token allocation combined with slow gossip propogation can lead to data loss,1.0
+mvn-install fails if no repo mirror is defined in settings.xml,Migrate dependency handling from maven-ant-tasks to resolver-ant-tasks,1.0
+CircleCI Unit Tests issue on latest trunk - java.lang.OutOfMemoryError: Java heap space ,CircleCI UnitTests error - java.lang.OutOfMemoryError: Java heap space,1.0
+RPM Installation on centos 7 is broken by CASSANDRA-17669,C* 4.0.5 RPM installation fails due to JRE 8/11 fix for CASSANDRA-17669,1.0
+Fix flaky testSkipScrubCorruptedCounterRowWithTool,Test Failure: org.apache.cassandra.db.ScrubTest.testScrubCorruptedCounterRow,1.0
+Guardrail for partition size,Migrate thresholds for compaction to guardrails,1.0
+"remove ""replace"" from cql reserved words",Reduce new reserved keywords introduced since 3.0,1.0
+LEAK DETECTED:  was not released before the reference was garbage collected,LEAK DETECTED: was not released before the reference was garbage collected,1.0
+dtest byteman errors,"Test Failure: python dtest, circleci, test_atomic_writes[none]",1.0
+Transient Replication: unable to insert data when the keyspace is configured with the SimpleStrategy,dtest.consistency_test/TestAccuracy/test_simple_strategy_each_quorum_counters/,1.0
+Full repair on a keyspace with a large amount of tables causes OOM,Repair causes out of memory,1.0
+Test failure: org.apache.cassandra.distributed.test.log.FetchLogFromPeersTest.catchupCoordinatorAheadPlacementsReadTest-_jdk11,Test failure: org.apache.cassandra.distributed.test.log.FetchLogFromPeersTest.catchupCoordinatorAheadPlacementsReadTest-_jdk17,1.0
+nodetool bootstrap resume completes successfully even if there is an error during bootstrap,nodetool bootstrap resume returns success even if there is an error during bootstrap,1.0
+DOC - tools/nodetool is untitled and might be affecting search results,"Fix cross-refs in trunk - incorrect syntax, no components",1.0
+Fix test failure: dtest-upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_3_11_X_HEAD.test_rolling_upgrade,Fix python dtest upgrade tests,1.0
+Not able to override default transport port in cassandra 4.0,sstableloader ignores the native port option,1.0
+Don't shut down gossip before native transport,Transports are stopped in the wrong order,1.0
+CMS is deprecated,Use G1GC as default,1.0
+Fix flakey testSendLarge - org.apache.cassandra.net.ConnectionTest,Fix flakey testSerializeError - org.apache.cassandra.net.ConnectionTest,1.0
+nodetool status owns (effective) question mark,"Incorrect output in ""nodetool status -r""",1.0
+Separate out allow filtering scanning through a partition versus scanning over the table,Do not require allow filtering when all primary keys are specified in SELECT ,1.0
+Investigate OWASP failure report,Security vulnerabilities in Netty in cassandra netty-all-4.1.58.Final.jar ,1.0
+Fix failing tests - TestUpgrade_[version]_To_indev_3_11_x,Test Failure: TestUpgrade_current_2_1_x_To_indev_3_11_x.test_bootstrap_multidc (upgrade),1.0
+Test failure: org.apache.cassandra.distributed.test.ClearSnapshotTest#clearSnapshotSlowTest-_jdk11,Test failure: org.apache.cassandra.distributed.test.ClearSnapshotTest.clearSnapshotSlowTest-_jdk17,1.0
+org.apache.cassandra.utils.memory.LongBufferPoolTest - tests are flaky,"LongBufferPoolTest failing, several data races in BufferPool",1.0
+Update Netty 4.0.44 -> 4.1.50 (fix security/performance issues),Upgrade Netty on 5.0,1.0
+Cassandra 3.11.2 not compatible with Oracle JRE 1.8.0_281,Cassandra not compatible with Oracle JRE 1.8.0_281 ,1.0
+Document cqlsh single quote escaping behavior on complex vs simple types,Accumulate all the `docs` PR from GitHub into a single patch,1.0
+digest may not match when single partition named queries skip older sstables,Digest for some queries is different depending whether the data are retrieved from sstable or memtable,1.0
+Flaky compaction_test.py::TestCompaction:: test_user_defined_compaction,Test failure: compaction_test.py::TestCompaction::test_user_defined_compaction,1.0
+upgrade_tests/upgrade_udtfix_test.py failing in Circle CI for Cassandra 3.0 and 3.11,Fix CircleCI config for running Python upgrade tests on 3.0 and 3.11,1.0
+Broken test_rolling_upgrade - upgrade_tests.upgrade_through_versions_test.TestUpgrade_indev_3_0_x_To_indev_4_0_x,Test Failure: python dtest test_parallel_upgrade,1.0
+Concurrent Index Memtable implementation using Trie,In-memory index and query path,1.0
+Fix dtest-novnode.materialized_views_test.TestMaterializedViews.test_drop_with_stopped_build,TestMaterializedViews::test_drop_with_stopped_build is flaky,1.0
+Wrong cqlsh python library location in cassandra-3.11.11-1 rhel packages ,cqlsh broken after upgrade from 3.11.10 to 3.11.11,1.0
+Remove Claim of Support for Python2 in 4.0, bin/cqlsh writes unwanted output to stderr while validating python version if python 2.6 is installed as system python,1.0
+Test Failure: sstableutil_test.TestSSTableUtil,Test failure: sstableutil_test.TestSSTableUtil.test_abortedcompaction,1.0
+Test Failure: org.apache.cassandra.fuzz.ring.ConsistentBootstrapTest.coordinatorIsBehindTest,Test failure: org.apache.cassandra.fuzz.ring.ConsistentBootstrapTest.coordinatorIsBehindTest,1.0
+"Pathological interaction between Cassandra and readahead, particularly on Centos 7 VMs",Update default disk_access_mode to mmap_index_only,1.0
+Test Failure: UnavailableSocketErrors: Local socket binding errors showing up intermittently in tests,Test Failure: cqlsh_tests.test_cqlsh_copy.TestCqlshCopy.test_bulk_round_trip_non_prepared_statements,1.0
+Test failure: org.apache.cassandra.distributed.test.log.InProgressSequenceCoordinationTest.rejectSubsequentInProgressSequence,Test failure: org.apache.cassandra.distributed.test.log.InProgressSequenceCoordinationTest:rejectSubsequentInProgressSequence,1.0
+"snakeyaml vulnerabilities: CVE-2021-4235, CVE-2022-1471, CVE-2022-3064",snakeyaml1.26 still exists in apache-cassandra-5.0.2,1.0
+Fix flaky LongSharedExecutorPoolTest.testPromptnessOfExecution,concurrent.LongSharedExecutorPoolTest.testPromptnessOfExecution broken,1.0
+ByteBufferAccessor cast exceptions are thrown when trying to query a virtual table,ByteBufferAccessor throws ClassCastException when trying to query system_views.local_read_latency,1.0
+Test Failure: org.apache.cassandra.distributed.upgrade.MixedModeAvailabilityV30Test.testAvailability,Test Failure: org.apache.cassandra.distributed.upgrade.MixedModeAvailabilityV3XTest.testAvailability,1.0
+Test Failure: Fix flaky ConnectionTest,flaky test org.apache.cassandra.net.ConnectionTest.testMessageDeliveryOnReconnect-compression.jdk1.8 on trunk,1.0
+"Text value containing ""/*"" interpreted as multiline comment in cqlsh",A multi-line comment containing semi colon as the end of line throws error,1.0
+Improve the code model around IndexContext,"SAI range query does not play together with ""IN""",1.0
+Fix test: bootstrap_test.py::TestBootstrap::test_bootstrap_with_reset_bootstrap_state,"commit log was switched from non-daemon to daemon threads, which causes the JVM to exit in some case as no non-daemon threads are active",1.0
+GSoC Blog Post,GSoC Blog Post,1.0
+jackson-databind vulnerability CVE-2022-42003 CVE-2022-42004,CVE's in Cassandra 4.0.7,1.0
+Response headers to OPTION messages always have Stream ID of zero ,Incorrect stream used in SUPPORTED frame,1.0
+Honour previous parameter defaults between builds in Jenkinsfile,Standalone jenkinsfile first round bug fixes,1.0
+Test failure: org.apache.cassandra.db.RepairedDataInfoTest,Test failure: org.apache.cassandra.db.lifecycle.ViewTest,1.0
+Avoid unnecessary index builds and validations,Importer should build SSTable indexes successfully before making new SSTables readable,1.0
+Unexpected error deserializing mutation when upgrade from 2.2.19 to 3.0.30/3.11.17,MarshalException when migrate data from 2.2.19 to 3.11.17,1.0
+CASSANDRA-15650 was merged after dtest refactor and modified classes no longer in the project,Fix NoSuchMethodError: 'org.apache.cassandra.distributed.api.NodeToolResult$Asserts ,1.0
+DOC - tools/nodetool is untitled and might be affecting search results,nodetool Docs missing titles,1.0
+python dtest regression caused by CASSANDRA-15637,test_refresh_size_estimates_clears_invalid_entries - nodetool_test.TestNodetool,1.0
+Remove harry-example.conf from conf/,Fix ClusterMetadataUpgradeHarryTest,1.0
+Digest mismatches during upgrade,Fix flaky test mixedModeReadColumnSubsetDigestCheck - org.apache.cassandra.distributed.upgrade.MixedModeReadTest,1.0
+Test failure: org.apache.cassandra.distributed.test.log.RegisterTest#serializationVersionDisagreementTest-_jdk17,Test failure: org.apache.cassandra.distributed.test.log.RegisterTest.serializationVersionDisagreementTest-_jdk17,1.0
+Fix upgrade python dtest test_crc_check_chance_upgrade - upgrade_crc_check_chance_test.TestCrcCheckChanceUpgrade,python dtest fails to talk to 2.2 using protocol 4 but cqlsh has no issue,1.0
+Test failure: ConsistentMoveTest#moveTest-cassandra.testtag_IS_UNDEFINED,Test failure:  ConsistentBootstrapTest#coordinatorIsBehindTest,1.0
+Handle empty TOC file when taking snapshots,java.lang.IllegalArgumentException during Cassandra 4.x upgrade,1.0
+Flush sealed period/snapshot tables on every write,Revisit use of sealed period lookup tables,1.0
+Remove references to run_dtests from README,Remove references to run_dtests from README,1.0
+/usr/bin/cassandra looking for wrong libjemalloc.so file,libjemalloc2 is not detected by cassandra script,1.0
+startup fails if directories do not exist,"When data dir is not present, we fail as FileNotFound causes org.apache.cassandra.config.DatabaseDescriptor#tryGetSpace to fail",1.0
+Test failure: org.apache.cassandra.distributed.test.SchemaTest.schemaReset,Test Failure: org.apache.cassandra.distributed.test.SchemaTest,1.0
+Test Failure: org.apache.cassandra.distributed.upgrade.ClusterMetadataUpgradeTest.upgradeWithHintsTest-_jdk11,Test Failure: org.apache.cassandra.distributed.upgrade.ClusterMetadataUpgradeTest.simpleUpgradeTest-_jdk11,1.0
+create a multiplexer job for Jenkins,Repeatable java test runs on jenkins,1.0
+"DOC - Fix multiple headers, formatting on Monitoring page",metrics.html with UI bug,1.0
+Flaky org.apache.cassandra.tools TopPartitionsTest testServiceTopPartitionsSingleTable,Unit test org.apache.cassandra.tools.TopPartitionsTest#testServiceTopPartitionsSingleTable is still flaky,1.0
+stop and restart fail in Debian 10 buster,Debian init script for 2.2.19 mostly broken on Debian 10 with systemd,1.0
+Unable to replace node with stale schema,replace_address does not work in 3.11.10,1.0
+DOC - Latency in Client Request Metrics tables incorrectly labelled,"DOC - Fix multiple headers, formatting on Monitoring page",1.0
+Fix flaky test org.apache.cassandra.transport.CQLConnectionTest,Test Failure: org.apache.cassandra.transport.CQLConnectionTest.handleCorruptionOfLargeMessageFrame,1.0
+org.apache.cassandra.db.commitlog.GroupCommitLogTest tests failing on trunk,Fix testBatchCLShutdownImmediately ,1.0
+WEBSITE - Update What's New Page for 4.1 and trunk,"WEBSITE - Cleanup sub-pages of What's New section, fix version numbers",1.0
+Create 5.0 Landing Page,WEBSITE - Add 5.0 landing page + homepage/main nav update,1.0
+guava vulnerability CVE-2023-2976,Security vulnerabilities in google-guava In Cassandra (CVE-2023-2976),1.0
+readWriteDuringBootstrapTest - org.apache.cassandra.distributed.test.ring.BootstrapTest,Test Failure: UNIT org.apache.cassandra.distributed.test.ring.BootstrapTest.bootstrapTest,1.0
+python upgrade tests include tests which are not impacted by the version under test,python dtest upgrade tests do not generate 3.0 to trunk tests,1.0
+high and critical CVEs io.netty to 4.1.42.Final to fix critical and high vulnerabilities,Remediate Cassandra 3.11.10 JAR dependency vulnerabilities ,1.0
+org.apache.cassandra.db.commitlog.GroupCommitLogTest tests failing on trunk,Fix org.apache.cassandra.db.commitlog.BatchCommitLogTest.testOutOfOrderFlushRecovery[3]-cdc,1.0
+nodetool bootstrap resume returns success even if there is an error during bootstrap,nodetool bootstrap resume completes successfully even if there is an error during bootstrap,1.0
+Test Failure: Fix flaky ConnectionTest,Fix flaky test org.apache.cassandra.transport.CQLConnectionTest,1.0
+Add Option to Timebox write timestamps,Create a guardrail to prevent writing of timestamps in the distant future,1.0
+Invalid version value: 4.0~alpha4 during startup,Invalid version value: 4.0~alpha4,1.0
+Test Failure: DiskBoundaryManagerTest.updateTokensTest-_jdk17,Test Failure: org.apache.cassandra.db.DiskBoundaryManagerTest.alterKeyspaceTest-cdc_jdk17_x86_64 ,1.0
+Add an optimized default configuration to tests and make it available for new users,Optimized default configuration,1.0
+Read Repair,Added Full Repair Example,1.0
+Flaky compaction_test.py::TestCompaction:: test_user_defined_compaction,Test failure: compaction_test.py::TestCompaction::test_compaction_throughput,1.0
+"nodetool with Java 8u331 returns ""URISyntaxException: 'Malformed IPv6 address at index 7: rmi://[127.0.0.1]:7199'""",Cassandra latest (3.0.26) image fails to start with health check,1.0
+"snakeyaml vulnerabilities: CVE-2021-4235, CVE-2022-1471, CVE-2022-3064",Security vulnerabilities in SnakeYAML In Cassandra (CVE-2022-1471),1.0
+Test Failure: dtest-upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV4Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD.test_parallel_upgrade_with_internode_ssl,Fix dtest-upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_3_11_X_HEAD.test_rolling_upgrade_with_internode_ssl,1.0
+GSoC Blog Post,GSoC Blog Post,1.0
+"Warn about unqualified prepared statement only if it is a select, update, delete, insert",Warnings when using the perl driver to connect to Cassandra,1.0
+Repeatable ci-cassandra.a.o ,Timeout occurred. Please note the time in the report does not reflect the time until the timeout.,1.0
+Test Failure: org.apache.cassandra.distributed.test.ring.DecommissionTest#testMixedVersionBlockDecom-_jdk17,Test failure: org.apache.cassandra.distributed.test.ring.DecommissionTest.test*Version*,1.0
+Nodetool unit test coverage,Nodetool unit testing,1.0
+RepairJobTest.testNoTreesRetainedAfterDifference fails consistently on Java 11,Fix test org.apache.cassandra.repair.RepairJobTest,1.0
+Utilising BTree Improvements,High CAS failures in MemtablePool.SubPool.tryAllocate,1.0
+Mutating sstable component may race with entire-sstable-streaming(ZCS) causing checksum validation failure,Flaky dtest test_dead_sync_initiator - repair_tests.repair_test.TestRepair,1.0
+Fix flaky junit.framework.TestSuite.org.apache.cassandra.io.sstable.CQLSSTableWriterTest-cdc,Fix flaky org.apache.cassandra.schema.SchemaTest.testTransKsMigration-cdc,1.0
+DOC - Documentation page for Hints has a broken table,Hint documentation page has a misaligned table of settings / description / default values,1.0
+in-jvm dtest upgrade tests don't support 4.0 versioning,In-jvm upgrade dtest version parsing does not support 4.0 alpha/beta/rc builds,1.0
+Migrate thresholds for compaction to guardrails,Add guardrail for partition size,1.0
+do not use http maven repo defined by MAT,Migrate dependency handling from maven-ant-tasks to resolver-ant-tasks,1.0
+IPMembershipTest.sameIPFailWithoutReplace fails with timeout, org.apache.cassandra.distributed.test.TopologyChangeTest failing with client timeout,1.0
+Upgrade to logback 1.2.3 to address CVE-2017-5929,Upgrade Cassandra Java Driver to 4.6,0.0
+provide a configuration option such as endpoint_verification_method,Update Netty 4.0.44 -> 4.1.50 (fix security/performance issues),0.0
+DOC - Primary range repair should be run on every datacenter,DOC - nodetool getendpoints man page improvements,0.0
+/usr/bin/cassandra looking for wrong libjemalloc.so file,Tiny documentation fix in Architecture/Overview,0.0
+Please update Apache Cassandra Repo link in install docs," Typo in website documentation for file ""mvs.rst""",0.0
+Separate out allow filtering scanning through a partition versus scanning over the table,copyutil.py uses Exception.message which doesn't exist in Python 3,0.0
+MV schema version update race,SASI BounceIntersectionIterator should perform skipTo() using biggest token value,0.0
+Delay between Gossip settle and CQL port opening during the startup,Make SASI query safe for concurrent compaction,0.0
+Add serial consistency option and regular and serial consistency into profile yaml,cassandra-stress fails when we  specify a port per node,0.0
+Improve range reads to query by endpoints instead of vnodes to reduce number of remote requests,stream sstable attached index files entirely with data file,0.0
+"DOC - Installation pages, curl command for retrieving keys",DOC - Improve tpstats documentation,0.0
+Metrics Documentation Enhancements,Doc update: stream-entire-sstable supports all compaction strategies and internode encryption,0.0
+Transports are stopped in the wrong order,JAVA 8: test_multiple_repair - repair_tests.incremental_repair_test.TestIncRepair,0.0
+Commented-out lines that end in a semicolon cause an error.,Dropping compact storage with 2.1-sstables on disk make them unreadable,0.0
+"DOC - Review Testing section, update builds info to ci-cassandra.apache.org",Add StorageServiceMBean#setDynamicBadnessThreshold to expose dynamic badness threshold,0.0
+Enhance fqltool to be able to export the fql log into a format which doesn't depend on Cassandra,CorruptSSTableException when compacting a 3.0 format sstable that was originally created as an outcome of 2.1 sstable upgrade,0.0
+When 3.0 reads 2.1 data with a regular column set<text> it expects the cellName to contain a element and fails if not true,Default StringTableSize parameter causes GC slowdown,0.0
+NoSpamLogger arguments building objects on hot paths,Operational Improvements & Hardening for Replica Filtering Protection,0.0
+Flaky unit test: CorruptedSSTablesCompactionsTest,Bloom filter false positive rate calculation does not take into account true negatives,0.0
+cqllib testing not running in CircleCI,Tarball contains duplicate entries,0.0
+YamlConfigurationLoader swallows a real exception and exposes a misleading exception message,jvm dtest builder should be provided to the factory and expose state,0.0
+bin/sstableverify should support user provided token ranges,Performance regression on internode messaging,0.0
+add client request size metrics to netty pipeline,flaky testWithMismatchingPending - org.apache.cassandra.distributed.test.PreviewRepairTest,0.0
+Only track ideal CL failure when request CL is met,DOC - Add cqlsh Python 3 support in NEWS.txt and tools section of website,0.0
+Security vulnerabilities with dependency jars  of Cassandra 3.11.6,Flaky unit test: SASIIndexTest.testInsertingIncorrectValuesIntoAgeIndex,0.0
+Add progress column in percents for system_views.sstable_tasks,"CorruptSSTableException after a 2.1 SSTable is upgraded to 3.0, failing reads",0.0
+Improve DROP COMPACT STORAGE,cassandra 3.11.4 deadlock,0.0
+When CDC is disabled bootstrapping breaks,Invalid cdc_raw_directory prevents server startup,0.0
+"WARN  [CompactionExecutor:5570] 2020-06-09 02:27:01,011 LeveledCompactionStrategy.java:144 - Could not acquire references for compacting SSTables",Bootstrap completes Successfully without streaming all the data,0.0
+Update Bundled Python Driver to the latest release,order by descending on frozen list not working,0.0
+SEPExecutorTest changingMaxWorkersMeetsConcurrencyGoalsTest failure,Batch statement preparation fails if multiple tables and parameters are used,0.0
+ASF CI builds for JDK11,Javadoc fails on java 11: unexported package,0.0
+stop and restart fail in Debian 10 buster,Cassandra driver first  connection get the user's own schema information,0.0
+JAVA 8/11: test_resumable_rebuild - rebuild_test.TestRebuild,ERROR when a disconnected Cassandra node comes back and receives a drop/add column request,0.0
+Cannot read data from a 3-node cluster which has two nodes down,Cassandra get range slice got Inaccurate estimates for concurrencyFactor ,0.0
+Support for networking via identity instead of IP,Optimize logging with lazy log parameter evaluation,0.0
+Internode messaging connection setup between 4.0 and legacy SSL 3.0 fails if initial connection version incorrect,Upgrade-dtests on trunk not working in CircleCI,0.0
+Make Table/Keyspace Metric Names Consistent With Each Other,Jenkins Test Results Report in plaintext for ASF ML,0.0
+Debian package fails to download on Arm-based hosts,Remove jackson-mapper-asl-1.9.13 to address CVE,0.0
+Flaky test: testNoTreesRetainedAfterDifference - org.apache.cassandra.repair.RepairJobTest,Truncation should fail any ongoing repairs,0.0
+replication_test.TestSnitchConfigurationUpdate.test_rf_expand_gossiping_property_file_snitch_multi_dc failure,Include DROPPED_COLUMNS in schema digest computation.,0.0
+Bootstrap resume and TestReplaceAddress fixes,Dropping a column can break queries until the schema is fully propagated,0.0
+"Use ""allow list"" or ""safe list"" instead of the term ""whitelist"" ",MemoryOutputStream overflow on large bloom filter,0.0
+Memory leak in CompressedChunkReader,NullPointerException in SELECT JSON statement when a UUID field contains an empty string,0.0
+Introduce MIDRES config in CircleCI,Update Jackson version to 2.9.10.1 because there are security issues in 2.9.5,0.0
+Queries on KEYS 2i are broken by DROP COMPACT STORAGE on 3.0,Unresolvable false digest mismatch during upgrade due to CASSANDRA-10657,0.0
+Add tests to cover CacheMetrics,Frozen RawTuple is not annotated with frozen in the toString method,0.0
+Generating nodetool docs fails with python 3,Add a startup check to detect if LZ4 uses java rather than native implementation,0.0
+cqlsh not able to fetch all rows when in batch mode,Range read concurrency factor didn't consider range merger,0.0
+DOC - Improve C* configuration docs,Mutating sstable component may race with entire-sstable-streaming(ZCS) causing checksum validation failure,0.0
+"Configuration to disallow queries with ""allow filtering""",Update Netty version to 4.1.50 because there are security issues in 4.1.37,0.0
+Provide ability to configure IAuditLogger,Fix flaky org.apache.cassandra.schema.SchemaTest.testTransKsMigration-cdc,0.0
+pushed_notifications_test.TestPushedNotifications.test_restart_node_localhost failure,JAVA 11: test_short_read - consistency_test.TestConsistency,0.0
+Add test to cover metrics related to the BufferPool,Close channel and reduce buffer allocation during entire sstable streaming with SSL,0.0
+Handle errors in StreamSession#prepare,test_speculative_data_request - read_repair_test.TestSpeculativeReadRepair,0.0
+Flaky dtest hintedhandoff_test.py::TestHintedHandoffConfig::test_hintedhandoff_setmaxwindow,@since missing/wrong for upgrade_internal_auth_test.TestAuthUpgrade.test_upgrade_to_22/33,0.0
+Mark test_populate_mv_after_insert_wide_rows as flaky,TestRepairDataSystemTable test_repair_parent_table and test_repair_table fail,0.0
+NPE in ConnectionBurnTest, Support in cassandra-in-jvm-dtest-api for replacing logback with alternate logger,0.0
+Fix flaky test incrementalSSTableSelection - org.apache.cassandra.db.streaming.CassandraStreamManagerTest,python dtest regression caused by CASSANDRA-15637,0.0
+Missing commas between endpoints in nodetool describering,Fix NPE in SimpleReadWriteTest after test framework behavior change,0.0
+nodetool enablefullquerylog doesn't allow caller to make non-blocking,Fix cqlsh output test,0.0
+"Setting ""cassandra_dir"" in pytest.ini has no effect",Fix cqlsh completion test,0.0
+Make clear in the documentation that stress is not a secured tool,Fix NoSuchMethodError: 'org.apache.cassandra.distributed.api.NodeToolResult$Asserts ,0.0
+dtest.consistency_test/TestAccuracy/test_simple_strategy_each_quorum_counters/,CASSANDRA-15650 broke CasWriteTest causing it to fail and hang,0.0
+CASSANDRA-15650 was merged after dtest refactor and modified classes no longer in the project,C* 4.0 is missing a way to identify transient/non-transient SSTables on disk,0.0
+Compression test failure,Fix flaky BinLogTest - org.apache.cassandra.utils.binlog.BinLogTest,0.0
+tools/bin/fqltool doesn't work on all distributions,buffer pool may throw NPE with concurrent release due to in-progress tiny pool eviction,0.0
+CustomNowInSecondsTest.testSelectQuery() is flaky,Only calculate 1.0 + dynamicBadnessThreshold once per loop in DynamicEndpointSnitch,0.0
+Add support for adding custom Verbs,EmptyType doesn't override writeValue so could attempt to write bytes when expected not to,0.0
+Support multiple keyspaces in Cassandra-Diff,Submitting Validation requests can block ANTI_ENTROPY stage ,0.0
+Fully purged static row causes NPE in repaired data tracking,Add bytebuddy support for in-jvm dtests,0.0
+Delete and save with same keys,Statistics upon streaming of entire SSTables in Netstats is wrong,0.0
+Rows can get duplicated in mixed major-version clusters and after full upgrade,OOM because repair session thread not closed when terminating repair,0.0
+test_optimized_primary_range_repair - transient_replication_test.TestTransientReplication,Single partition queries can mistakenly omit partition deletions and resurrect data,0.0
+Improve BatchMetricsTest ,Attach cluster type to the error message in cassandra-diff,0.0
+Does  Cassandra 3.11.3/3.11.5  is affected by CVE-2019-10712 or not ?,Fix in-jvm upgrade dtests,0.0
+"InstanceClassLoader fails to load with the following previously initiated loading for a different type with name ""org/w3c/dom/Document""",Add support in in-jvm dtest for JMX values,0.0
+in-jvm dtest IInstance and ICoordinator should use QueryResult as the base API,Fix unit tests to load test/conf/cassandra.yaml (so to listen on a valid ip),0.0
+Invalid version value: 4.0~alpha4 during startup,Add token to tombstone warning and error log message,0.0
+Avoid per-host hinted-handoff throttle being rounded to 0 in large cluster,Warn or fail to start server when G1 is used and Xmn is set,0.0
+cqlsh_tests.test_cqlsh.TestCqlsh.test_pycodestyle_compliance fails on trunk,High Local read latency for few tables,0.0
+BusyPoolException with OperationTimedOutException,Ec2Snitch fails on upgrade in legacy mode,0.0
+Upgraded C* (4.x) fail to start because of Compact Tables & dropping compact tables in downgraded C* (3.11.4) introduces non-existent columns,Code comment with issue number,0.0
+"Jenkins pipeline small fixes: slack notification body, StabilityTestDataPublisher, archive cassandra-test-report.txt",Followup on CASSANDRA-15600,0.0
+sstablemetadata should show tombstone timestamp not just the local drop time,Cannot change the number of tokens from 512 to 256 Fatal configuration error; unable to start server.,0.0
+"All test targets to set jvm arg ""java.io.tmpdir"" according to ${tmp.dir}",Fix flaky junit.framework.TestSuite.org.apache.cassandra.io.sstable.CQLSSTableWriterTest-cdc,0.0
+Remove generated files from apache-cassandra-*-src.tar.gz artifacts,[CQL help] URL for help topic CREATE_KEYSPACE is leading to page that does not exist,0.0
+Add deb and rpm packaging to artifacts test script,Create table Asynchronously or creating table contact the same node from many client threads at same time may causing data loss,0.0
+File access errors on Windows 7 with version 3.15 and 3.16 - NoHostAvailable,Potential duplicate rows on 2.X->3.X upgrade when multi-rows range tombstones interacts with collection tombstones,0.0
+Jenkins dtests don't need to be category throttled any longer,nodetool garbagecollect could leave LCS level intact,0.0
+Upgrade to Jackson Databind 2.9.10.4 or later to address CVEs,"Fix Python SyntaxWarning: ""is not"" with a literal. Did you mean ""!=""",0.0
+cqlsh -e parsing bug,Tunable RangeTombstoneList initial size and resize factor,0.0
+test_refresh_size_estimates_clears_invalid_entries - nodetool_test.TestNodetool,"DOC - Update details of new book ""Cassandra: The Definitive Guide""",0.0
+dtests fix due to cqlsh behavior change,Generate compiler options file to support Java11 in IDEA.,0.0
+CustomIndexTest.indexBuildingPagesLargePartitions is flaky,Regression in traceOutgoingMessage printing message size in tracing,0.0
+Add additional logging around FileUtils and compaction leftover cleanup,Update Python driver for cqlsh to 3.23,0.0
+"Fix flakiness of DecayingEstimatedHistogramReservoirTest#testStriping and apply the same ""fix"" to other tests",Increase test coverage of batch counters,0.0
+FBUtilitities.testWaitFirstFuture is flaky,Less test stderr spam when running tests w/ java 11,0.0
+Entire SSTable transfers don't work over SSL,ChecksummingTransformerTest#corruptionCausesFailure fails for seed 43595190254702,0.0
+Conflicting LWT transactions may be committed during topology change,Ant publish still trying to fetch maven dependencies using HTTP,0.0
+BinLog deadlock on stopping when the sample queue is full,Get-by-index introduced in CASSANDRA-15394 could have negative performance impact on non-RandomAccess List,0.0
+3.11.6 Image Vulnerabilities,CQLSH doesn't exit with proper code with multiple SOURCE directives.,0.0
+Nodetool tpstats formatting / grouping to make more logical output,ActiveRepairService#terminateSessions can leak RepairJob threads ,0.0
+Benchmark performance difference between Docker and Kubernetes when running Cassandra:2.2.16 official Docker image,Implement resultMetadata flag for a conditional statement or batch,0.0
+Cassandra-Stress : Performance degraded with Cassandra on Single node cluster,Mutation size exceeds max limit - clients get timeout?,0.0
+"Modify cassandra.yaml and replace the default data location, still data stored in default location",Improvements in circle CI default config,0.0
+any open source management tool for appache cassandra ,Simplify the documentation,0.0
+Table of content links for  https://cassandra.apache.org/doc/old/CQL-3.0.html are broken,Cassandra non-seed node doing auto_bootstrap from other DC,0.0
+Transient Replication:  java.lang.AssertionError null error,Cassandra commitlog dump ,0.0
+DOC - Review Download page,Document how to run Cassandra on Windows,0.0
+Accessors for SystemProperties,Improve messaging on indexing frozen collections,0.0
+Prevent repair from overrunning compaction,DOC - Add known installation issues to the Troubleshooting page,0.0
+system_schema keyspace complain of schema mismatch during upgrade,test org.apache.cassandra.config.DatabaseDescriptorRefTest#testDatabaseDescriptorRef fail when run with intellij ide,0.0
+cqlsh ALTER KEYSPACE completion show virtual table keyspaces,Add a debug line informing of building summary during sstable open,0.0
+Upgrade tests fail with InvocationTargetException,WEBSITE - October 2021 blog post for What the Future Holds for Apache Cassandra and Apache Cassandra Changelog #10 formatting errors fix,0.0
+WEBSITE - November 2021 blog post titled Inside Cassandra: an interview with Marcel Birkner at Instana,"WEBSITE - December 2021 blog post titled ""Using Arithmetic Operators in Cassandra 4.0""",0.0
+Issue num_tokens on cassandra after perform snapshot restore - Cassandra 3.11.10 and 3.11.11,CEP-15: General Purpose Transactions,0.0
+CEP-15: Accord Beta,CEP-15: Cassandra Prototype,0.0
+CEP-15: Accord Prototype,CEP-15: (C*) Strict Serializability verification,0.0
+Update documentation for GRANT/REVOKE ALL TABLES ,Forbid other Future implementations with checkstyle,0.0
+Dropping a column can break queries until the schema is fully propagated (TAKE 2),Allow to filter using LIKE predicates,0.0
+JNA 5.6.0 does not support arm64,Refactor schema management to allow for schema source pluggability,0.0
+Migrate thresholds for logged/unlogged batches to guardrails,Refactor structure of caching metrics and expose auth cache metrics via JMX,0.0
+Update docs for CASSANDRA-17132,CEP-17 – Pluggable SSTable format (SSTable format API),0.0
+utests_system_keyspace_directory is not run in Jenkins,Enable full checkstyle on tests,0.0
+Allow to grant permission for all tables in a keyspace ,Broken test_rolling_upgrade - upgrade_tests.upgrade_through_versions_test.TestUpgrade_indev_3_0_x_To_indev_4_0_x,0.0
+Migrate thresholds for compaction to guardrails,Provide summary of failed SessionInfo's in StreamResultFuture,0.0
+Add Math functions ,testsome target doesn't work with wildcards,0.0
+Remove commitlog_sync_batch_window_in_ms,Fix test TestHintedHandoff#test_hintedhandoff_window,0.0
+Guardrail for column size,CEP-10: Simulator Java11 Support,0.0
+CompactStorageUpgradeTest.compactStorageUpgradeTest fails w/OOM,Fix failing test: dtest.bootstrap_test.TestBootstrap.test_bootstrap_binary_disabled,0.0
+High CAS failures in MemtablePool.SubPool.tryAllocate,When streaming sees a ClosedChannelException this triggers the disk failure policy,0.0
+Fix python dtest upgrade tests,Add += and -= syntax to ALTER TABLE WITH,0.0
+CEP-15: (C*) Topology integration,Not able to override default transport port in cassandra 4.0,0.0
+Guardrail for number of partition keys on IN queries,More detailed latency metrics,0.0
+Add a Virtual table to expose Streaming metrics,TestMaterializedViews::test_drop_with_stopped_build is flaky,0.0
+Add new metrics to track the number of requests performed by GROUP BY and Aggregation queries ,Remove use of deprecated java.util.concurrent in tests,0.0
+Artificial Latency Injection,Avoid sstable corruption when upgrading from 4.0-rc1 to 4.0.0,0.0
+We may miss some endpoint state updates on startup,Remove use of deprecated Futures in tests,0.0
+Enhance Zstd support in Cassandra with dictionaries,Update ant-junit to 1.10.12,0.0
+Upgrade Snappy version to support Apple M1,CEP-15: (Accord) Do not send redundant dependencies,0.0
+CEP-15: (Accord) Transactions must be replicated to an optimal number of replicas,CEP-15: (Accord) Invalidate commands that have not reached consensus,0.0
+CEP-15: (C*) Live migration to/from Paxos and Accord,Improve backup / restore documentation,0.0
+Fix test org.apache.cassandra.repair.RepairJobTest,"When data dir is not present, we fail as FileNotFound causes org.apache.cassandra.config.DatabaseDescriptor#tryGetSpace to fail",0.0
+Fix failing test: test_bootstrap_with_reset_bootstrap_state - bootstrap_test.TestBootstrap,Add support for PEM based key material for SSL,0.0
+CEP-14: Paxos Improvements,CEP-11: Memtable API implementation,0.0
+CEP-15: (Accord) Strict Serializability Verification,Add flags to CircleCI generation script to setup the workflows,0.0
+CEP-15 (C*): Messaging and storage engine integration,Upgrade to Logback 1.2.9 (security),0.0
+readWriteDuringBootstrapTest - org.apache.cassandra.distributed.test.ring.BootstrapTest,"Enhance SnakeYAML properties to be reusable outside of YAML parsing, support camel case conversion to snake case, and add support to ignore properties",0.0
+CEP-15: (C*/Accord) Transaction state storage,CEP-3: Guardrails,0.0
+CEP-15: (Accord) Transaction outcomes must be replicated to an optimal number of replicas,CEP-15: (Accord) Transaction dependencies must include at most the txnId,0.0
+CEP-15: (Accord) Liveness / Repair,Implement startup check to prevent Cassandra start to spread zombie data,0.0
+Introduce separate rate limiting settings for entire SSTable streaming,Failed inbound internode authentication failures generate ugly warning with stack trace,0.0
+Harden resource management on SSTable components to prevent further leaks,DebuggableThreadPoolExecutor does not propagate client warnings,0.0
+Add logging and metrics to Index Summary Redistribution,SchemaCQLHelperTest methods can be simplified,0.0
+Guardrails prototype,Limit the maximum hints size per host,0.0
+"Add support for String contatenation through the ""+"" operator",Flaky RecomputingSupplierTest,0.0
+Refactor normal/preview/IR repair to standardize repair cleanup and error handling of failed RepairJobs,Flaky GrantAndRevokeTest,0.0
+List Appends Are Not Linearizable,Allow column_index_size_in_kb to be configurable through nodetool,0.0
+Relax schema synchronization when opening a keyspace,Fix failing test: SSTableReaderTest.testPersistentStatistics,0.0
+Increase the buckets count for timer histogram,UnableToParseClientMessageFromBlockedSubnetTest.badMessageCausesProtocolExceptionFromExcludeList failing on extra log entries,0.0
+internode_send_buff_size_in_bytes and internode_recv_buff_size_in_bytes from cassandra.yaml ,utests_system_keyspace_directory - more than 500 tests failing on trunk,0.0
+BLOG - Update intro paragraph of interview with Marcel Birkner at Instana,Let IntelliJ run each test class in a separate JVM,0.0
+Fix test org.apache.cassandra.net.MessagingServiceTest,"Blog post: ""Harry: A Fuzz Testing Tool for Apache Cassandra""",0.0
+Flaky test - org.apache.cassandra.serializers.TimestampSerializerTest,Broken test_speculative_data_request,0.0
+Add a virtual table for exposing prepared statements metrics,"commit log was switched from non-daemon to daemon threads, which causes the JVM to exit in some case as no non-daemon threads are active",0.0
+Add utilities for materialized views to CQLTester,Replace sequential sstable generation identifier with UUID v1,0.0
+Guardrails for consistency levels,Cqlshlib failure,0.0
+Classpath can be broken when multiple artifacts are present in build dir,Contribulyze: Generate contributors reports based on git history,0.0
+RepairJobTest.testNoTreesRetainedAfterDifference fails consistently on Java 11,Fix test: dtest-upgrade.upgrade_tests.drop_compact_storage_upgrade_test.TestDropCompactStorage.test_drop_compact_storage_mixed_cluster,0.0
+Add a virtual table for exposing batch metrics,Guardrail to disable read-before-write list operations,0.0
+Make nodes more resilient to local unrelated files during startup,Update CircleCI config to use the latest Docker image,0.0
+ViewComplexTest hardening,Diagnostic events for guardrails,0.0
+File leaks will not be be detected and released due to strong self-references in the tidier,Avoid unecessary array allocations and initializations in RequestValidations,0.0
+Use com.google.common.collect.Lists instead of com.google.monitoring.runtime.instrumentation.common.collect.Lists in RowUtil.,Migrate thresholds for number of keyspaces and tables to guardrails,0.0
+"WEBSITE - December 2021 blog post titled ""Configurable Storage Ports and Why We Need Them""",Guardrails for disk usage,0.0
+Make startup checks configurable,Allow to GRANT or REVOKE multiple permissions in a single statement,0.0
+Remove use of deprecated Files in tests,CQLSSTableWriter backwards compatibility fix for Date fields,0.0
+Guardrail for page size,Fix circle MID and HIGH for j11_jvm_dtests ,0.0
+ViewTests flaky on timeouts,Queries performed with NODE_LOCAL consistency level do not update request metrics,0.0
+MessagingServiceTest listenOptionalSecureConnection and listenRequiredSecureConnection fail sporadically,Don't block gossip when clearing snapshots for failing repairs,0.0
+Guardrail for SELECT IN terms and their cartesian product,Fix startup issue with internode_application_timeout_in_ms,0.0
+Fix test org.apache.cassandra.distributed.test.SecondaryIndexTest#test_only_coordinator_chooses_index_for_query,Log missing peers in StartupClusterConnectivityChecker,0.0
+Introduce TimeUUID,Log read timeouts and unavailables at INFO via a no-spam logger,0.0
+Migrate threshold for minimum keyspace replication factor to guardrails,Cannot restart a node when there are other nodes being down in in-jvm dtest framework,0.0
+Flaky CompactionsBytemanTest,InitialConnectionHandler Configured pipeline: DefaultChannelPipeline spamming the logs,0.0
+Fix formatting in  cassandra.yaml,Add unix time conversion functions,0.0
+startup fails if directories do not exist,Broken test_timeuuid - upgrade_tests.cql_tests,0.0
+JVMStabilityInspector.forceHeapSpaceOomMaybe should handle all non-heap OOMs rather than only supporting direct only,Make capacity/validity/updateinterval/activeupdate for Auth Caches configurable via nodetool,0.0
+"v4+ protocol did not clean up client warnings, which caused leaking the state",Remove use of System.currentTimeMillis,0.0
+Guardrails for collection items and size,Eliminate toCQLString() duplication between ReadCommand and AbstractReadQuery,0.0
+Log time spent writing keys during compaction,LocalReadSizeWarningTest#failThresholdSinglePartition is flaky,0.0
+"DOC - Fix multiple headers, formatting on Monitoring page",Guardrail for partition size,0.0
+incremental repairs get stuck often,Consistency Level Considered Connectivity Checker,0.0
+CEP-15: (Accord) Reconfiguration,Adapt track_warnings to Guardrails,0.0
+CEP-15: (C*/Accord) Reorder Buffer,CEP-15: (C*) Integration with Schema,0.0
+CEP-15: (C*) Unified Commit Log,CEP-15: (C*) Real-time Repair,0.0
+CEP-15: (C*) Unique Per-Node Id for (Time)UUID,CEP-15: (Accord) Track timestamp bounds between peers,0.0
+CEP-15: (Accord) Transaction State GC,dtest-api: Option to start nodes with blank gossip state,0.0
+Fix test: bootstrap_test.py::TestBootstrap::test_bootstrap_with_reset_bootstrap_state,Broken API link on Cassandra Cloud Offering page,0.0
+Node can be left in a bad state after invalid memory access exception,The process cannot access the file because it is being used by another process.,0.0
+Synthetic heap OOM generation should only run with the presence of on OOM JVM options,java.lang.IllegalStateException while streaming,0.0
+nodetool snapshot not copying .TOC file for a sstable,Is Cassandra vulnerable to CVE-2021-44228?,0.0
+Arrow to SSTable converter,FQL: Enabling via nodetool can trigger disk_failure_mode,0.0
+""" as first char of a text column (and unique occurrence) during COPY with DELIMITER set to |",Found Third Party Software  vulnerabilities/security issue in 3.11.11,0.0
+Migrate thresholds for GC pauses to guardrails,Migrate thresholds for scanned tombstones to guardrails,0.0
+Migrate the thresholds for RFP cached rows to guardrails,Using the user specified page size for internal paging in GROUP BY queries can slow down the query and create high traffic between nodes,0.0
+Cassandra  new node is taking Too long to join in cluster ,"In the paxos implementation, a delayed proposal might overwrite newer values",0.0
+Fix test distributed.test.trackwarnings.TombstoneWarningTest,Make Guardrails configurable through virtual tables,0.0
+Fix test NetstatsBootstrapWithEntireSSTablesCompressionStreamingTest#testWithStreamingEntireSSTablesWithoutCompressionWithoutThrottling,coordinator_large_read should be actually  coordinator_read_size in cassandra.yaml,0.0
+Fix test failure: dtest-upgrade.upgrade_tests.upgrade_through_versions_test.TestProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_3_11_X_HEAD.test_rolling_upgrade,Remove custom Duration object and refactor its usages to use Duration from Java,0.0
+Building Cassandra gives a resolver error,Support adding custom verbs at runtime,0.0
+Refactor and support pluggable failure detection,Unable to update token metadata if replacement host set and unresolvable in DNS,0.0
+Upgrade failure caused by the change of value of `num_token`,Refactor and support pluggable cluster membership,0.0
+Endless loop/timeout in ShortReadRowsProtection due to int overflow in ThriftLimits,Backport snakeyaml 1.26 upgrade,0.0
+Add minor upgrade/downgrade/mixed mode support in in-jvm dtests,Fix resource leak due to Files.list,0.0
+Allow configuring max allowable disk usage quota by keyspace,Direct memory OOM ,0.0
+Avoid unnecessary String.format in QueryProcessor when getting stored prepared statement ,Emit warnings for deprecated parameters (changed names) only once,0.0
+CircleCI dtest multiplexer with MIDRES needs more resources,Fix rare NPE caused by batchlog replay / node decomission races,0.0
+Add info how to test with your own CCM branch,Incorrect IP used for gossip across DCs with prefer_local=true,0.0
+Implement graceful paging across tombstones with short-circuit on paging rather than throwing TombstoneOverwhelmingExceptions,Restrict the types of objects SnakeYAML is allowed to instantiate,0.0
+Test failure: org.apache.cassandra.distributed.test.RepairTest.testForcedNormalRepairWithOneNodeDown,"Added support for type VECTOR<type, dimension>",0.0
+Convert AccordStateCache cache from write-through to write-back,"Fix cross-refs in trunk - incorrect syntax, no components",0.0
+Tidy up vestigial code left over after CASSANDRA-17931,Make JMX SSL to be configured in cassandra.yaml,0.0
+TupleType getString and fromString are not safe with string types,SAI - LIKE prefix/suffix support,0.0
+Endpoint grouping for distributed range reads,CEP-29: NOT operator,0.0
+Enhance nodetool gcstats ,Enable Direct I/O For CommitLog Files,0.0
+Waiting for gossip to settle does not wait for live endpoints,cqlsh on Cassandra 4.1.2 fails on Amazon Linux ,0.0
+Test failure: utest: org.apache.cassandra.db.RepairedDataTombstonesTest.readTestPartitionTombstones-.jdk11,Test failure: org.apache.cassandra.distributed.test.UpgradeSSTablesTest,0.0
+Storage Attached Indexes (Phase 2),Instance.nodetoolResult should connect to JMX if there is such feature enabled in its config,0.0
+CEP-8 Driver donations,CEP-15: (C*) Transactional Metadata Integration,0.0
+Make Corretto Crypto Provider the Default,Test Failure: HintsDisabledTest.testHintedHandoffDisabled,0.0
+Standalone Jenkinsfile,Add support for vectors on UDFs,0.0
+Investigate the sizing of BlockPackedReader and MonotonicBlockPackedReader,Use trie for literal index building,0.0
+Add option to sstablepartitions for aggregating stats,CEP-30 ANN Vector Search with SAI,0.0
+Allow full indexing on frozen collections,Add support for Lucene index and query analyzers,0.0
+Update BlockBalancedTreeWriter to take advantage of Lucene improvements,guava vulnerability CVE-2023-2976,0.0
+Cassandra Catalyst Program,Introduce IndexTermType to replace TypeUtils in SAI,0.0
+Simulator Java 17 support,Expose decommission state to nodetool info,0.0
+Inconsistent permissions on new empty node in cluster,Write docs for CEP-30 Vector Search,0.0
+Move format-specific sstable options into the format configuration,Test Failure: MixedModeAvailabilityV30AllOneTest.testAvailabilityCoordinatorUpgraded,0.0
+Make sstable format configurable per table,Refactor cqlsh On/Off switch implementation and make the output consistent,0.0
+CEP-15 Accord: NotWitnessed commands can receive an invalidate promise but would return Zero instead,"CEP-15 (Accord) Original and recover coordinators may hit a race condition with PreApply where reads and writes are interleaved, causing one of the coordinators to see the writes from the other",0.0
+CEP-15: (C*) Improve the chaos generation for Burn Tests: slow/flakey connections and dropped messages,Baseline Metrics for Accord Transactions,0.0
+Minimise state kept in accord system tables by reusing state from message log,Test failure: test_putget – dtest.putget_test.TestPutGet,0.0
+AssertionError: Unknown keyspace after dropping a keyspace,Unify CQLTester#waitForIndex and SAITester#waitForIndexQueryable,0.0
+Test failure: org.apache.cassandra.index.sasi.SASICQLTest#testPagingWithClustering,Test failure: org.apache.cassandra.net.ConnectionTest.testTimeout,0.0
+ERROR: ArrayIndexOutOfBoundsException: -1 in MigrationStage thread when shutdown Cassandra-3.11.16 node,mTLS based client and internode authenticators,0.0
+Make cassandra-stress able to read all credentials from a file,CEP-15: (C*) Enhance in-memory FileSystem to work with mmap and support tests to add custom logic,0.0
+When decommissioning should set Severity to limit traffic,Avoid unnecessary deserialization of terminal arguments when executing CQL functions,0.0
+Refactor cloud snitches to get rid of duplicate code,nodetool describecluster command is not showing correct Down count.  ,0.0
+Deduplicate the MixedModeAvailability upgrade jvm-dtests,Incremental repairs fail on mixed IPv4/v6 addresses serializing SyncRequest,0.0
+CEP-15: (C*) Add notion of CommandsForRanges and make this durable in C*,CIDR filtering authorizer for Cassandra,0.0
+Add guardrail for partition size,Alter Type does not validate changes like Create Type does,0.0
+Deadlock updating sstable metadata if disk boundaries need reloading,Move checkstyle files into .build,0.0
+Add vector similarity functions,NPE when deserializing malformed collections from client,0.0
+Slow builds due to checkstyle,Docker images can no longer be built due to virtualenv from pip,0.0
+Fix org.apache.cassandra.transport.MessagePayloadTest-.jdk17,Implement/override equals and hashCode methods in the ServerEncryptionOptions class,0.0
+CircleCI: Add separate approval step for oa utests on separate workflows,"snappy-java vulnerability: CVE-2023-34455, CVE-2023-34454, CVE-2023-34453",0.0
+BulkLoader withCipherSuites option is ignored,Remove unnecessary shuffling of GossipDigests in Gossiper#makeRandomGossipDigest,0.0
+Bti shouldn't be available in compatibility mode,snakeyaml vulnerability: CVE-2023-2251,0.0
+"negotiatedProtocolMustBeAcceptedProtocolTest tests fail with ""TLSv1.1 failed to negotiate"" on JDK17",remove dh_python use from debian packaging,0.0
+Add duration to sstablemetadata utility,Generate.sh -s param to skip autodetection of tests,0.0
+"Missing ""SSTable Count"" metric  when using nodetool with ""--format"" option",Revert some accesses to internals after CASSANDRA-18329 lands,0.0
+Test Failure: upgrade_through_versions_test.py::TestUpgrade::test_rolling_upgrade_with_internode_ssl,compaction_tombstone_warning_threshold and compaction_large_partition_warning_threshold cause deprecation warnings,0.0
+CircleCI java distributed tests to run in Medium containers,Improvements to SSTable format configuration,0.0
+Fix org.apache.cassandra.transport.DriverBurnTest.measureLargeV4WithCompression-.jdk17 ,Disable the deprecated keyspace/table thresholds and convert them to Guardrails,0.0
+jackson-databind-2.13.2.2.jar vulnerability: CVE-2023-35116,Limit the read size on the row level,0.0
+Upgrade guava on trunk,Add support for JMX in the in-jvm dtest framework,0.0
+Assertion error when describing mv as table,Upgrade Zstd to 1.5.5,0.0
+Use WithProperties to ensure that system properties are handled,Add keyspace column to clients virtual table,0.0
+"Integer(int), Long(long), Float(double) were deprecated in JDK9",jackson-core vulnerability: CVE-2022-45688,0.0
+Update tasks configuration to run checks locally when requested,Unit tests in org.apache.cassandra.cql3.EmptyValuesTest class occasionally failing with JDK17,0.0
+Partial compaction can resurrect deleted data,Debian packaging source should exclude git subdirectory,0.0
+Cassandra doesn't start on JDK17,Paxos only repair is treated as an incremental repair,0.0
+Update Cassandra logos on ASF project logos site,jvm dtest logs should indicate specific test case name being run,0.0
+Test pipeline does not always copy to nightlies,Test failure: pdtest: dtest-upgrade.upgrade_tests.cql_tests.TestCQLNodes2RF1_Upgrade_current_2_1_x_To_indev_3_11_x.test_clustering_order_and_functions,0.0
+j11 flaky test: org.apache.cassandra.cql3.MemtableSizeTest#testTruncationReleasesLogSpace,No link to source packages,0.0
+"WEBSITE - Replace homepage, Events page banners with C* Summit",BLOG - Town Hall Replay: Cassandra Performance Tuning Like You’ve Been Doing it For Ten Years,0.0
+Test failure: org.apache.cassandra.io.sstable.indexsummary.IndexSummaryTest.testLargeIndexSummary,CEP-21 Reinstate client notifications for joining/leaving/moving nodes,0.0
+CEP-21 Fix tools tests,CEP-21 Avoid NPE when getting dc/rack for not yet registered endpoints,0.0
+CEP-21 Ensure that ClusterMetadata::forceEpoch keeps component epochs consistent,CEP-21 Rewrite o.a.c.distributed.test.SchemaTest,0.0
+"CEP-21 During startup, don't open SSTables until local metadata log replay is complete",CEP-21 Ensure that SchemaTransformation impls correctly set TableMetadata epoch,0.0
+CEP-21 During startup request replay from CMS asynchronously,CREATE INDEX Modifications for Initial Release of SAI,0.0
+Add basic text tokenisation and analysis,Checksum per-SSTable and per-column SAI components after streaming,0.0
+Optimize Initial Concurrency Selection for Range Read Algorithm During SAI Queries,[Analytics] Add Caching of Node Settings to Improve Efficiency,0.0
+Add support for multiple condition branches and results in Accord transaction,"Repair vtable uses number of records rather than memory limits, which can cause more memory allocated than expected",0.0
+Add error detection in BTI indexes,[Cassandra Analytics] Add Release Audit Tool (RAT) plugin,0.0
+ERROR: Invalid consistency level: NODE_LOCAL when using partition denylist in 4.1.2,As DataOutputBuffer approaches the MAX_BUFFER_SIZE limit there should be a warning.,0.0
+Upgrade to lucene-core 9.7.0,Save state about completed streams and display in nodetool netstats,0.0
+Missed version note for nodetool setmaxhintwindow,AUTH requests use too much resources,0.0
+[Analytics] Add NOTICE.txt in Cassandra Analytics ,BLOG - Clarify wording on 3.x EOL post,0.0
+Handle special column name when upgrading from 2.2.19 to 3.0.29/3.11.15,assertion failure when reading after writes and column drop are executed in parallel,0.0
+NPE during reads after complex column drop, NullPointerException in cassandra.audit.AuditLogManager.querySuccess when querying endpoints via mgmtapi,0.0
+StorageService throws inconsistent exceptions for unknown hosts,The exceptions related to queryNames are inconsistently handled in NodeProbe.java,0.0
+Testing required to test upgrade and downgrade completeness,Cassandra Analytics - Upgrade to use JUnit 5,0.0
+Gossip unstable with istio service mesh in 4.1.2,snappy-java vulnerability: CVE-2023-34453,0.0
+nodetool garbagecollect does not use all available compaction executors,Cassandra Analytics - Adding support for TTL & Timestamps for bulk writes,0.0
+Backport Cassandra-10508 Remove hard-coded SSL cipher suites and protocols,Add jobs for resource-intensive Python upgrade tests,0.0
+CircleCI and Jenkins - add missing Java and Python upgrade tests,Dropped table causes node to get stuck in JOINING,0.0
+ UnknownColumnFamilyException reading from socket Error Post DB Version Upgrade from 3.11.10 to 4.1.0,CQLSH formatting output is incorrect when querying the system properties virtual table,0.0
+CEP 15: (Accord) push waiting for epoch into CommandStore rather than require every command to think about the edge case when the epoch isn't ready,[Analytics] Circle CI Configuration for Cassandra Analytics,0.0
+Align all system property names used by the project to use the 'cassandra' prefix,Fix shutting down IsolatedJmx ,0.0
+Mixed single-column and multi-column clustering restrictions are not merged correctly,CQLSSTableWriter support the generation of secondary index sstable,0.0
+[Analytics] Abstract mTLS provisioning via a SecretsProvider,[Jenkins] Run Upgrade tests framework against all maintained JDKs,0.0
+Cannot read or repair data after dropping a column when one of the nodes is down,Upgrade to 4.1.1 fails with NullPointerException,0.0
+Anticompaction triggered during repair when it's not needed,Leak detected issue in cassandra 3.11.1,0.0
+"Improve nodetool enable{audit,fullquery}log, CVE-2023-30601",Circle repeated runs don't skip checkstyle,0.0
+[Analytics] Add .asf.yaml file to the Cassandra Analytics repository,Add a simple way to run pycodestyle checks,0.0
+Add JMX utility class to in-jvm dtest to ease development of new tests using JMX,Fix flaky dtest: transient_replication_test.TestTransientReplicationRepairStreamEntireSSTable,0.0
+Disable chronicle analytics,Investigate preloading ccm repositories in the docker image,0.0
+Enable encryption of primary indexes,BLOG - EOL Announcement for 3.x and 3.0.x,0.0
+Document that DecimalType violates property serialize(deserialize(bb)) != bb when used as a clustering column,StorageServiceMBean throws inconsistent exceptions,0.0
+"""Connection refused"" problem",yaml should explain behavior from CASSANDRA-13325,0.0
+CEP-15: (Accord) Join cluster without full transaction log,CEP-15: (Accord) Separate durable and transient listeners,0.0
+LEAK DETECTED: org.apache.cassandra.io.util.FileHandle$Cleanup in TestSecondaryIndexes.test_failing_manual_rebuild_index,Support GRANT REVOKE for DESCRIBE KEYSPACES / KEYSPACE / TABLE,0.0
+Make Cassandra more user-friendly (admin-friendly) by cleaning up logging,ParseUtils can fail to handle wrong number,0.0
+FunctionCall can throw more specific exceptions,Enable single_sstable_uplevel by default for LCS,0.0
+LeveledCompactionStrategy does not check its constructor,Connection without username not logged in auditlog ,0.0
+Update testing for drop compact storage and CASSANDRA-15897,Update the upgrade paths for storage_engine_upgrade_test,0.0
+Warnings when using the perl driver to connect to Cassandra,Review documentation about needing to stop the server for sstable tools,0.0
+Formatting looks broken on the metrics page,CEP 15: Accord - Add a new Status of PreAcceptedInvalidated,0.0
+MappedByteBufferIndexInputProvider can better throw UndeclaredThrowableException,"NativeTransportEncryptionOptionsTest fails with ant testsome, passes in intellij",0.0
+Native Protocol Improvements,Do not require allow filtering when all primary keys are specified in SELECT ,0.0
+"Average of ""decimal"" values rounds the average if all inputs are integers",Evaluate fuzzer that found 18108 and others,0.0
+BLOG - Announcing Monthly Apache Cassandra Town Halls,"Do not include checkstyle or other checks in ""jar"" target, have separate target for them",0.0
+Fix flaky paxosRepairHistoryIsntUpdatedInForcedRepair,Improve default output behavior when tests are run with ant,0.0
+Create implicit memtable configurations for skiplist and trie memtables,Row cache inconsistency issue: A read can put stale data into row cache in a race condition,0.0
