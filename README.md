@@ -29,7 +29,7 @@ This started as an experiment: Can we teach both the **breadth** and **depth** o
 - **SEASON 3 -- Transformers and Large Language Models**
   - Episode 1: [Transformers/LLMs Explained Like Never Before: Intuition, Math & Code in an Illustrated Trilogy](https://youtu.be/6jyL6NB3_LI)
   - Episode 2: [Encoder-only Transformer explained simply, intuitively and comprehensively](https://youtu.be/UJZ4HGLnSMU)
-  - Episode 3: Decoder-only Transformer explained simply, intuitively and comprehensively
+  - Episode 3: [How LLMs learn language and generate text -- explained simply, intuitively and comprehensively](https://www.youtube.com/watch?v=LoA1Z_4wSU4)
   - Episode 4: Encoder-Decoder Transformer explained simply, intuitively and comprehensively
   - Episode 5: Optimizing LLMs for speed and performance (KVCaching, PEFT, LoRA, Quantization, Distillation, MTP)
   - Episode 6: Optimizing LLMs for quality (MLA, Sampling Techniques, Temperature, MoE)
